@@ -10,7 +10,7 @@ let dead = false;
 let score = 0;
 
 function onKeyDown(e) {
-	key = e.code;
+	if (~["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(e.code)) key = e.code;
 }
 
 document.addEventListener("keydown", onKeyDown);
